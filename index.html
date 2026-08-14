@@ -1,0 +1,3093 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+    <title>Madi Sexton — Ceramics</title>
+
+
+
+
+
+
+    <style>
+
+
+
+
+
+
+        /* -------------------------
+
+
+           GENERAL
+
+
+        ------------------------- */
+
+
+
+
+
+
+        * {
+
+
+            margin: 0;
+
+
+            padding: 0;
+
+
+            box-sizing: border-box;
+
+
+        }
+
+
+
+
+
+
+        html {
+
+
+            scroll-behavior: smooth;
+
+
+        }
+
+
+
+
+
+
+        body {
+
+
+            background: #f3f0e8;
+
+
+            color: #25342f;
+
+
+            font-family: Arial, Helvetica, sans-serif;
+
+
+            line-height: 1.5;
+
+
+        }
+
+
+
+
+
+
+        img {
+
+
+            width: 100%;
+
+
+            display: block;
+
+
+        }
+
+
+
+
+
+
+        a {
+
+
+            color: inherit;
+
+
+            text-decoration: none;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           NAVIGATION
+
+
+        ------------------------- */
+
+
+
+
+
+
+        nav {
+
+
+            position: fixed;
+
+
+            top: 0;
+
+
+            left: 0;
+
+
+            width: 100%;
+
+
+            padding: 25px 5vw;
+
+
+
+
+
+
+            display: flex;
+
+
+            justify-content: space-between;
+
+
+            align-items: center;
+
+
+
+
+
+
+            z-index: 100;
+
+
+
+
+
+
+            background: rgba(243, 240, 232, 0.88);
+
+
+            backdrop-filter: blur(8px);
+
+
+        }
+
+
+
+
+
+
+        .logo {
+
+
+            font-family: Georgia, serif;
+
+
+            font-size: 22px;
+
+
+            letter-spacing: 1px;
+
+
+        }
+
+
+
+
+
+
+        .nav-links {
+
+
+            display: flex;
+
+
+            gap: 30px;
+
+
+            font-size: 13px;
+
+
+            text-transform: uppercase;
+
+
+            letter-spacing: 1.5px;
+
+
+        }
+
+
+
+
+
+
+        .nav-links a {
+
+
+            transition: opacity 0.3s ease;
+
+
+        }
+
+
+
+
+
+
+        .nav-links a:hover {
+
+
+            opacity: 0.45;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           HERO
+
+
+        ------------------------- */
+
+
+
+
+
+
+        .hero {
+
+
+            min-height: 100vh;
+
+
+            padding: 140px 6vw 70px;
+
+
+
+
+
+
+            display: grid;
+
+
+            grid-template-columns: 1fr 1fr;
+
+
+            gap: 5vw;
+
+
+
+
+
+
+            align-items: center;
+
+
+        }
+
+
+
+
+
+
+        .hero-text {
+
+
+            max-width: 600px;
+
+
+        }
+
+
+
+
+
+
+        .small-title {
+
+
+            font-size: 12px;
+
+
+            letter-spacing: 3px;
+
+
+            text-transform: uppercase;
+
+
+            margin-bottom: 25px;
+
+
+        }
+
+
+
+
+
+
+        .hero h1 {
+
+
+            font-family: Georgia, serif;
+
+
+            font-weight: normal;
+
+
+            font-size: clamp(55px, 8vw, 120px);
+
+
+            line-height: 0.9;
+
+
+            letter-spacing: -4px;
+
+
+            margin-bottom: 35px;
+
+
+        }
+
+
+
+
+
+
+        .hero p {
+
+
+            max-width: 430px;
+
+
+            font-size: 16px;
+
+
+            line-height: 1.7;
+
+
+        }
+
+
+
+
+
+
+        .hero-image {
+
+
+            position: relative;
+
+
+        }
+
+
+
+
+
+
+        .hero-image img {
+
+
+            height: 70vh;
+
+
+            object-fit: cover;
+
+
+        }
+
+
+
+
+
+
+        /* organic spiral */
+
+
+
+
+
+
+       .spiral {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -35px;
+    bottom: -35px;
+}
+
+.spiral img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           INTRO
+
+
+        ------------------------- */
+
+
+
+
+
+
+        .intro {
+
+
+            padding: 150px 10vw;
+
+
+            text-align: center;
+
+
+        }
+
+
+
+
+
+
+        .intro h2 {
+
+
+            font-family: Georgia, serif;
+
+
+            font-weight: normal;
+
+
+            font-size: clamp(35px, 5vw, 70px);
+
+
+            line-height: 1.05;
+
+
+            max-width: 900px;
+
+
+            margin: auto;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           WORK
+
+
+        ------------------------- */
+
+
+
+
+
+
+        #work {
+
+
+            padding: 80px 6vw 150px;
+
+
+        }
+
+
+
+
+
+
+        .section-heading {
+
+
+            display: flex;
+
+
+            justify-content: space-between;
+
+
+            align-items: baseline;
+
+
+
+
+
+
+            margin-bottom: 60px;
+
+
+        }
+
+
+
+
+
+
+        .section-heading h2 {
+
+
+            font-family: Georgia, serif;
+
+
+            font-size: 50px;
+
+
+            font-weight: normal;
+
+
+        }
+
+
+
+
+
+
+        .section-heading span {
+
+
+            font-size: 12px;
+
+
+            letter-spacing: 2px;
+
+
+            text-transform: uppercase;
+
+
+        }
+
+
+
+
+
+
+        .gallery {
+
+
+            display: grid;
+
+
+            grid-template-columns: repeat(2, 1fr);
+
+
+            gap: 70px 35px;
+
+
+        }
+
+
+
+
+
+
+        .piece {
+
+
+            cursor: pointer;
+
+
+        }
+
+
+
+
+
+
+        .piece:nth-child(2) {
+
+
+            margin-top: 120px;
+
+
+        }
+
+
+
+
+
+
+        .piece:nth-child(3) {
+
+
+            margin-top: -30px;
+
+
+        }
+
+
+
+
+
+
+        .piece:nth-child(4) {
+
+
+            margin-top: 80px;
+
+
+        }
+
+
+
+
+
+
+        .piece-image {
+
+
+            overflow: hidden;
+
+
+        }
+
+
+
+
+
+
+        .piece-image img {
+
+
+            aspect-ratio: 4 / 5;
+
+
+            object-fit: cover;
+
+
+
+
+
+
+            transition: transform 0.7s ease;
+
+
+        }
+
+
+
+
+
+
+        .piece:hover img {
+
+
+            transform: scale(1.03);
+
+
+        }
+
+
+
+
+
+
+        .piece-info {
+
+
+            padding-top: 18px;
+
+
+
+
+
+
+            display: flex;
+
+
+            justify-content: space-between;
+
+
+
+
+
+
+            font-size: 13px;
+
+
+        }
+
+
+
+
+
+
+        .piece-name {
+
+
+            font-family: Georgia, serif;
+
+
+            font-size: 18px;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           STATEMENT
+
+
+        ------------------------- */
+
+
+
+
+
+
+        .statement {
+
+
+            background: #dfe2d8;
+
+
+            padding: 150px 10vw;
+
+
+        }
+
+
+
+
+
+
+        .statement-inner {
+
+
+            max-width: 1000px;
+
+
+            margin: auto;
+
+
+
+
+
+
+            display: grid;
+
+
+            grid-template-columns: 1fr 2fr;
+
+
+            gap: 80px;
+
+
+        }
+
+
+
+
+
+
+        .statement-label {
+
+
+            font-size: 12px;
+
+
+            text-transform: uppercase;
+
+
+            letter-spacing: 2px;
+
+
+        }
+
+
+
+
+
+
+        .statement-text {
+
+
+            font-family: Georgia, serif;
+
+
+            font-size: clamp(27px, 3vw, 45px);
+
+
+            line-height: 1.25;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           ABOUT
+
+
+        ------------------------- */
+
+
+
+
+
+
+        .about {
+
+
+            padding: 150px 6vw;
+
+
+
+
+
+
+            display: grid;
+
+
+            grid-template-columns: 1fr 1fr;
+
+
+            gap: 8vw;
+
+
+            align-items: center;
+
+
+        }
+
+
+
+
+
+
+        .about-image img {
+
+
+            aspect-ratio: 4 / 5;
+
+
+            object-fit: cover;
+
+
+        }
+
+
+
+
+
+
+        .about-text h2 {
+
+
+            font-family: Georgia, serif;
+
+
+            font-size: 55px;
+
+
+            font-weight: normal;
+
+
+            margin-bottom: 30px;
+
+
+        }
+
+
+
+
+
+
+        .about-text p {
+
+
+            max-width: 500px;
+
+
+            margin-bottom: 20px;
+
+
+            font-size: 16px;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           EXHIBITION
+
+
+        ------------------------- */
+
+
+
+
+
+
+        .exhibition {
+
+
+            padding: 120px 6vw;
+
+
+            border-top: 1px solid rgba(37,52,47,0.25);
+
+
+            border-bottom: 1px solid rgba(37,52,47,0.25);
+
+
+        }
+
+
+
+
+
+
+        .exhibition h2 {
+
+
+            font-family: Georgia, serif;
+
+
+            font-size: clamp(50px, 8vw, 110px);
+
+
+            font-weight: normal;
+
+
+            line-height: 0.9;
+
+
+            margin-bottom: 50px;
+
+
+        }
+
+
+
+
+
+
+        .exhibition-details {
+
+
+            display: grid;
+
+
+            grid-template-columns: repeat(3, 1fr);
+
+
+            gap: 30px;
+
+
+            max-width: 800px;
+
+
+        }
+
+
+
+
+
+
+        .detail-title {
+
+
+            font-size: 11px;
+
+
+            text-transform: uppercase;
+
+
+            letter-spacing: 2px;
+
+
+            margin-bottom: 8px;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           CONTACT
+
+
+        ------------------------- */
+
+
+
+
+
+
+        .contact {
+
+
+            padding: 160px 6vw;
+
+
+            text-align: center;
+
+
+        }
+
+
+
+
+
+
+        .contact h2 {
+
+
+            font-family: Georgia, serif;
+
+
+            font-size: clamp(50px, 8vw, 110px);
+
+
+            font-weight: normal;
+
+
+            line-height: 0.9;
+
+
+            margin-bottom: 40px;
+
+
+        }
+
+
+
+
+
+
+        .contact p {
+
+
+            margin-bottom: 25px;
+
+
+        }
+
+
+
+
+
+
+        .email {
+
+
+            font-family: Georgia, serif;
+
+
+            font-size: 25px;
+
+
+            border-bottom: 1px solid;
+
+
+            padding-bottom: 5px;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           FOOTER
+
+
+        ------------------------- */
+
+
+
+
+
+
+        footer {
+
+
+            padding: 30px 6vw;
+
+
+
+
+
+
+            display: flex;
+
+
+            justify-content: space-between;
+
+
+
+
+
+
+            font-size: 11px;
+
+
+            text-transform: uppercase;
+
+
+            letter-spacing: 1.5px;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        /* -------------------------
+
+
+           MOBILE
+
+
+        ------------------------- */
+
+
+
+
+
+
+        @media (max-width: 750px) {
+
+
+
+
+
+
+            nav {
+
+
+                padding: 20px;
+
+
+            }
+
+
+
+
+
+
+            .nav-links {
+
+
+                gap: 12px;
+
+
+                font-size: 10px;
+
+
+            }
+
+
+
+
+
+
+            .hero {
+
+
+                grid-template-columns: 1fr;
+
+
+                padding: 120px 20px 70px;
+
+
+            }
+
+
+
+
+
+
+            .hero h1 {
+
+
+                font-size: 65px;
+
+
+            }
+
+
+
+
+
+
+            .hero-image img {
+
+
+                height: 65vh;
+
+
+            }
+
+
+
+
+
+
+            .spiral {
+
+
+                width: 80px;
+
+
+                height: 80px;
+
+
+                right: -10px;
+
+
+                bottom: -20px;
+
+
+                font-size: 30px;
+
+
+            }
+
+
+
+
+
+
+            .intro {
+
+
+                padding: 100px 25px;
+
+
+            }
+
+
+
+
+
+
+            #work {
+
+
+                padding: 70px 20px 100px;
+
+
+            }
+
+
+
+
+
+
+            .gallery {
+
+
+                grid-template-columns: 1fr;
+
+
+                gap: 60px;
+
+
+            }
+
+
+
+
+
+
+            .piece:nth-child(n) {
+
+
+                margin-top: 0;
+
+
+            }
+
+
+
+
+
+
+            .statement {
+
+
+                padding: 100px 25px;
+
+
+            }
+
+
+
+
+
+
+            .statement-inner {
+
+
+                grid-template-columns: 1fr;
+
+
+                gap: 30px;
+
+
+            }
+
+
+
+
+
+
+            .about {
+
+
+                grid-template-columns: 1fr;
+
+
+                padding: 100px 20px;
+
+
+            }
+
+
+
+
+
+
+            .about-text h2 {
+
+
+                font-size: 50px;
+
+
+            }
+
+
+
+
+
+
+            .exhibition {
+
+
+                padding: 100px 20px;
+
+
+            }
+
+
+
+
+
+
+            .exhibition-details {
+
+
+                grid-template-columns: 1fr;
+
+
+            }
+
+
+
+
+
+
+            .contact {
+
+
+                padding: 120px 20px;
+
+
+            }
+
+
+
+
+
+
+            footer {
+
+
+                padding: 25px 20px;
+
+
+                flex-direction: column;
+
+
+                gap: 10px;
+
+
+            }
+
+
+
+
+
+
+        }
+
+
+
+
+/* -------------------------
+   STUDIO NOTES
+------------------------- */
+
+.studio-notes {
+    padding: 150px 6vw;
+    background: #dfe2d9;
+}
+
+.notes-heading {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8vw;
+
+    align-items: end;
+}
+
+.notes-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.notes-heading h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: clamp(60px, 8vw, 110px);
+    line-height: 0.85;
+}
+
+.notes-heading > p {
+    max-width: 400px;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+
+/* NOTES GRID */
+
+.notes-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 60px;
+}
+
+
+/* INDIVIDUAL NOTE */
+
+.note {
+    max-width: 480px;
+}
+
+.note-offset {
+    margin-top: 120px;
+}
+
+
+/* IMAGE */
+
+.note-image {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.note-image img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+.note:hover .note-image img {
+    transform: scale(1.03);
+}
+
+
+/* TEXT */
+
+.note-info {
+    padding-right: 30px;
+}
+
+.note-date {
+    display: block;
+
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.note-info h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+.note-info p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 400px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .studio-notes {
+        padding: 100px 20px;
+    }
+
+    .notes-heading {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .notes-heading h2 {
+        font-size: 65px;
+    }
+
+    .notes-heading > p {
+        font-size: 19px;
+    }
+
+    .notes-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .note-offset {
+        margin-top: 0;
+    }
+
+    .note-info {
+        padding-right: 0;
+    }
+
+}
+
+    </style>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    <!-- NAVIGATION -->
+
+
+
+
+
+
+    <nav>
+
+
+
+
+
+
+        <a href="#" class="logo">
+
+
+            MADI SEXTON
+
+
+        </a>
+
+
+
+
+
+
+        <div class="nav-links">
+
+
+            <a href="#work">Work</a>
+
+            <a href="#studio-notes">Studio Notes</a>
+
+
+            <a href="#about">About</a>
+
+
+            <a href="#exhibition">Exhibition</a>
+
+
+            <a href="#contact">Contact</a>
+
+
+        </div>
+
+
+
+
+
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- HERO -->
+
+
+
+
+
+
+    <section class="hero">
+
+
+
+
+
+
+        <div class="hero-text">
+
+
+
+
+
+
+            <div class="small-title">
+
+
+                Ceramic artist · Aotearoa
+
+
+            </div>
+
+
+
+
+
+
+            <h1>
+
+
+                Forms<br>
+
+
+                from<br>
+
+
+                nature.
+
+
+            </h1>
+
+
+
+
+
+
+            <p>
+
+
+                Hand-built ceramic vessels exploring the relationship
+
+
+                between land, ocean and the human body.
+
+
+            </p>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="hero-image">
+
+
+
+
+
+
+            <!-- CHANGE THIS IMAGE -->
+
+
+
+
+
+
+            <img src="./images /mepic.JPG" alt="Ceramic vessel">
+
+
+
+
+
+
+           <div class="spiral">
+    <img src="./images /spiral4.png" alt="">
+</div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- INTRO -->
+
+
+
+
+
+
+    <section class="intro">
+
+
+
+
+
+
+        <h2>
+
+
+            Objects shaped by tides,
+
+
+            textures and the imperfect
+
+
+            forms of the natural world.
+
+
+        </h2>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- WORK -->
+
+
+
+
+
+
+    <section id="work">
+
+
+
+
+
+
+        <div class="section-heading">
+
+
+
+
+
+
+            <h2>Selected Work</h2>
+
+
+
+
+
+
+            <span>2025 — 2026</span>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="gallery">
+
+
+
+
+
+
+
+
+
+
+            <div class="piece">
+
+
+
+
+
+
+                <div class="piece-image">
+
+
+
+
+
+
+                    <img
+
+
+                        src="./images /piece1.jpg"
+
+
+                        alt="Ceramic vessel"
+
+
+                    >
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="piece-info">
+
+
+
+
+
+
+                    <span class="piece-name">
+
+
+                        Intertidal
+
+
+                    </span>
+
+
+
+
+
+
+                    <span>
+
+
+                        Stoneware
+
+
+                    </span>
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="piece">
+
+
+
+
+
+
+                <div class="piece-image">
+
+
+
+
+
+
+                    <img
+
+
+                        src="./images /piece2.jpg"
+
+
+                        alt="Ceramic sculpture"
+
+
+                    >
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="piece-info">
+
+
+
+
+
+
+                    <span class="piece-name">
+
+
+                        Ode to the Ocean
+
+
+                    </span>
+
+
+
+
+
+
+                    <span>
+
+
+                        Stoneware
+
+
+                    </span>
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="piece">
+
+
+
+
+
+
+                <div class="piece-image">
+
+
+
+
+
+
+                    <img
+
+
+                        src="./images /piece3.jpg"
+
+
+                        alt="Ocean inspired ceramic"
+
+
+                    >
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="piece-info">
+
+
+
+
+
+
+                    <span class="piece-name">
+
+
+                        Barren
+
+
+                    </span>
+
+
+
+
+
+
+                    <span>
+
+
+                        Stoneware
+
+
+                    </span>
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="piece">
+
+
+
+
+
+
+                <div class="piece-image">
+
+
+
+
+
+
+                    <img
+
+
+                        src="./images /piece4.JPG"
+
+
+                        alt="Handmade ceramic vessel"
+
+
+                    >
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="piece-info">
+
+
+
+
+
+
+                    <span class="piece-name">
+
+
+                       Flow
+
+
+                    </span>
+
+
+
+
+
+
+                    <span>
+
+
+                        Stoneware
+
+
+                    </span>
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+<!-- STUDIO NOTES -->
+
+<section class="studio-notes" id="studio-notes">
+
+    <div class="notes-heading">
+
+        <div>
+            <div class="notes-label">
+                Journal / 2026
+            </div>
+
+            <h2>
+                Studio Notes
+            </h2>
+        </div>
+
+        <p>
+            Fragments from the studio,
+            observations, experiments and
+            things I'm noticing.
+        </p>
+
+    </div>
+
+
+    <div class="notes-grid">
+
+
+        <!-- NOTE 01 -->
+
+        <article class="note">
+
+            <div class="note-image">
+                <img
+                    src="./notes/bullkelpwc.JPG"
+                    alt="Watercolour expression of Rimu Rapa"
+                >
+            </div>
+
+            <div class="note-info">
+
+                <span class="note-date">
+                    14 August 2026
+                </span>
+
+                <h3>
+                    Kelp + Water 
+                </h3>
+
+                <p>
+                    A dance with watercolour,
+                    expressing the movement of kelp in the current.
+                    A slighty abstract representation of Bull Kelp. 
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- NOTE 02 -->
+
+        <article class="note note-offset">
+
+            <div class="note-image">
+                <img
+                    src="./notes/intertidal.jpg"
+                    alt="Subtle Details"
+                >
+            </div>
+
+            <div class="note-info">
+
+                <span class="note-date">
+                    15 May 2025
+                </span>
+
+                <h3>
+                    Intertidal forms
+                </h3>
+
+                <p>
+                    Striking textures and shapes captured from 
+                    the intertidal zone using custom plaster moulds. 
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- ARTIST STATEMENT -->
+
+
+
+
+
+
+    <section class="statement">
+
+
+
+
+
+
+        <div class="statement-inner">
+
+
+
+
+
+
+            <div class="statement-label">
+
+
+                Artist Statement
+
+
+            </div>
+
+
+
+
+
+
+            <div class="statement-text">
+
+
+
+
+
+
+                My practice is rooted in an
+
+
+                observation of the natural world.
+
+
+
+
+
+
+                <br><br>
+
+
+
+
+
+
+                I am interested in the irregular,
+
+
+                the eroded and the constantly
+
+
+                changing — forms that echo the
+
+
+                movement of water and the
+
+
+                environments that surround us.
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ABOUT -->
+
+
+
+
+
+
+    <section class="about" id="about">
+
+
+
+
+
+
+
+
+
+
+        <div class="about-image">
+
+
+
+
+
+
+            <!-- CHANGE THIS IMAGE -->
+
+
+
+
+
+
+            <img
+
+
+                src="./images /about.JPG"
+
+
+                alt="Madi Sexton ceramic studio"
+
+
+            >
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="about-text">
+
+
+
+
+
+
+            <h2>
+
+
+                About the artist
+
+
+            </h2>
+
+
+
+
+
+
+            <p>
+
+
+                I am Madi Sexton, a ceramic artist based
+
+
+                in Aotearoa New Zealand.
+
+
+            </p>
+
+
+
+
+
+
+            <p>
+
+
+                My work draws from my connection with
+
+
+                the ocean and the environments around me,
+
+
+                translating organic structures, textures
+
+
+                and movement into ceramic forms.
+
+
+            </p>
+
+
+
+
+
+
+            <p>
+
+
+                Working primarily with stoneware, I embrace
+
+
+                the unpredictability of the material and
+
+
+                allow natural processes to influence each
+
+
+                piece.
+
+
+            </p>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- EXHIBITION -->
+
+
+
+
+
+
+    <section class="exhibition" id="exhibition">
+
+
+
+
+
+
+        <h2>
+
+
+            CURRENT<br>
+
+
+            EXHIBITION
+
+
+        </h2>
+
+
+
+
+
+
+
+
+
+
+        <div class="exhibition-details">
+
+
+
+
+
+
+            <div>
+
+
+
+
+
+
+                <div class="detail-title">
+
+
+                    Exhibition
+
+
+                </div>
+
+
+
+
+
+
+                <p>
+
+
+                    Your Exhibition Name
+
+
+                </p>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div>
+
+
+
+
+
+
+                <div class="detail-title">
+
+
+                    Location
+
+
+                </div>
+
+
+
+
+
+
+                <p>
+
+
+                    Auckland, Aotearoa
+
+
+                </p>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div>
+
+
+
+
+
+
+                <div class="detail-title">
+
+
+                    Dates
+
+
+                </div>
+
+
+
+
+
+
+                <p>
+
+
+                    2026
+
+
+                </p>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CONTACT -->
+
+
+
+
+
+
+    <section class="contact" id="contact">
+
+
+
+
+
+
+        <h2>
+
+
+            Let's<br>
+
+
+            connect.
+
+
+        </h2>
+
+
+
+
+
+
+        <p>
+
+
+            For exhibitions, commissions and enquiries
+
+
+        </p>
+
+
+
+
+
+
+        <a
+
+
+            class="email"
+
+
+            href="mailto:studio@madisexton.com"
+
+
+        >
+
+
+            studio@madisexton.com
+
+
+        </a>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+
+
+
+
+    <footer>
+
+
+
+
+
+
+        <span>
+
+
+            © 2026 Madi Sexton
+
+
+        </span>
+
+
+
+
+
+
+        <span>
+
+
+            Ceramics · Aotearoa
+
+
+        </span>
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+</body>
+</html>
