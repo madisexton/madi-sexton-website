@@ -440,11 +440,10 @@
 
 .spiral {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     right: -10px;
     bottom: -20px;
-    font-size: 30px;
     z-index: 10;
 }
 
@@ -1249,94 +1248,87 @@
         ------------------------- */
 
 
-
-
-
 @media (max-width: 750px) {
-}
 
     nav {
         padding: 20px;
     }
 
     .nav-links {
-        gap: 12px;
-        font-size: 10px;
+        gap: 15px;
+        font-size: 11px;
     }
 
     .hero {
+        min-height: auto;
+        padding: 120px 20px 50px;
+        display: grid;
         grid-template-columns: 1fr;
-        padding: 120px 20px 70px;
+        gap: 40px;
     }
 
     .hero h1 {
-        font-size: 65px;
+        font-size: clamp(55px, 16vw, 85px);
+        letter-spacing: -3px;
     }
 
-  .hero-image img {
-    height: auto;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-}
-    
-    .gallery {
-        grid-template-columns: 1fr;
-        gap: 60px;
+    .hero p {
+        font-size: 15px;
     }
 
-    .piece:nth-child(n) {
-        margin-top: 0;
-    }
-
-    .piece-image img {
+    .hero-image {
         width: 100%;
+    }
+
+    .hero-image img {
         height: auto;
         aspect-ratio: 4 / 5;
         object-fit: cover;
     }
 
-    .intro {
-        padding: 100px 25px;
+    .spiral {
+        width: 150px;
+        height: 150px;
+        right: -10px;
+        bottom: -20px;
     }
 
-    #work {
-        padding: 70px 20px 100px;
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item.large {
+        grid-column: span 1;
+    }
+
+    .gallery-item img {
+        height: auto;
+    }
+
+    .notes-grid {
+        grid-template-columns: 1fr;
     }
 
     .statement {
-        padding: 100px 25px;
-    }
-
-    .statement-inner {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        padding: 100px 20px;
     }
 
     .about {
         grid-template-columns: 1fr;
-        padding: 100px 20px;
-    }
-
-    .about-text h2 {
-        font-size: 50px;
+        gap: 40px;
     }
 
     .exhibition {
-        padding: 100px 20px;
-    }
-
-    .exhibition-details {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .contact {
-        padding: 120px 20px;
+        padding: 100px 20px;
     }
 
     footer {
-        padding: 25px 20px;
-        flex-direction: column;
-        gap: 10px;
+        padding: 30px 20px;
     }
 
 }
