@@ -1257,7 +1257,51 @@
 
         @media (max-width: 750px) {
 
+@media (max-width: 750px) {
 
+    nav {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 10px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 120px 20px 70px;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero-image img {
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .piece:nth-child(n) {
+        margin-top: 0;
+    }
+
+    .piece-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+
+    /* the rest of your mobile CSS... */
+
+}
 
 
 
@@ -1321,13 +1365,10 @@
 
 
             .hero-image img {
-
-
-                height: 65vh;
-
-
-            }
-
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
 
 
 
