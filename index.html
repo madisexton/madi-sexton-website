@@ -995,94 +995,60 @@
 
         ------------------------- */
 
-
-
-
-
-
-        .exhibition {
-
-
-            padding: 120px 6vw;
-
-
-            border-top: 1px solid rgba(37,52,47,0.25);
-
-
-            border-bottom: 1px solid rgba(37,52,47,0.25);
-
-
-        }
-
-
-
-
-
-
-        .exhibition h2 {
-
-
-            font-family: Georgia, serif;
-
-
-            font-size: clamp(50px, 8vw, 110px);
-
-
-            font-weight: normal;
-
-
-            line-height: 0.9;
-
-
-            margin-bottom: 50px;
-
-
-        }
-
-
-
-
-
-
-        .exhibition-details {
-
-
-            display: grid;
-
-
-            grid-template-columns: repeat(3, 1fr);
-
-
-            gap: 30px;
-
-
-            max-width: 800px;
-
-
-        }
-
-
-
-
-
-
-        .detail-title {
-
-
-            font-size: 11px;
-
-
-            text-transform: uppercase;
-
-
-            letter-spacing: 2px;
-
-
-            margin-bottom: 8px;
-
-
-        }
-
+.exhibition {
+    padding: 120px 6vw;
+    border-top: 1px solid rgba(37,52,47,0.25);
+    border-bottom: 1px solid rgba(37,52,47,0.25);
+}
+
+.exhibition h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(50px, 8vw, 110px);
+    font-weight: normal;
+    line-height: 0.9;
+    margin-bottom: 70px;
+}
+
+.exhibition-section {
+    margin-bottom: 70px;
+}
+
+.exhibition-section:last-child {
+    margin-bottom: 0;
+}
+
+.exhibition-status {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.exhibition-item {
+    border-top: 1px solid rgba(37,52,47,0.2);
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.exhibition-item h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.exhibition-item p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.exhibition-date {
+    font-size: 14px;
+    line-height: 1.7;
+}
 
 
 
@@ -1349,11 +1315,18 @@ nav {
         gap: 40px;
     }
 
-   .exhibition {
-    grid-template-columns: 1fr;
-    gap: 60px;
+ .exhibition {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.exhibition-item {
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.exhibition-section {
+    margin-bottom: 60px;
 }
 
     .contact {
@@ -2652,180 +2625,63 @@ nav {
     <!-- EXHIBITION -->
 
 
+<!-- EXHIBITIONS -->
+
+<section class="exhibition" id="exhibition">
+
+    <h2>
+        EXHIBITIONS
+    </h2>
 
 
+    <!-- UPCOMING -->
 
+    <div class="exhibition-section">
 
-    <section class="exhibition" id="exhibition">
+        <div class="exhibition-status">
+            Upcoming
+        </div>
 
-
-
-
-
-
-        <h2>
-
-
-            UPCOMING<br>
-
-
-            EXHIBITION
-
-
-        </h2>
-
-
-
-
-
-
-
-
-
-
-        <div class="exhibition-details">
-
-
-
-
-
+        <div class="exhibition-item">
 
             <div>
-
-
-
-
-
-
-                <div class="detail-title">
-
-
-                    Exhibition
-
-
-                </div>
-
-
-
-
-
-
-                <p>
-
-
-                    TBC
-
-
-                </p>
-
-
-
-
-
-
+                <h3>Exhibition TBC</h3>
+                <p>Malcolm Smith Gallery, Auckland</p>
             </div>
 
-
-
-
-
-
-
-
-
-
-            <div>
-
-
-
-
-
-
-                <div class="detail-title">
-
-
-                    Location
-
-
-                </div>
-
-
-
-
-
-
-                <p>
-
-
-                    Malcolm Smith Gallery, Auckland 
-
-
-                </p>
-
-
-
-
-
-
+            <div class="exhibition-date">
+                January 16th – February 27th, 2027
             </div>
-
-
-
-
-
-
-
-
-
-
-            <div>
-
-
-
-
-
-
-                <div class="detail-title">
-
-
-                    Dates
-
-
-                </div>
-
-
-
-
-
-
-                <p>
-
-
-                    January 16th - February 27th, 2027
-
-
-                </p>
-
-
-
-
-
-
-            </div>
-
-
-
-
-
 
         </div>
 
+    </div>
 
 
+    <!-- PAST -->
 
+    <div class="exhibition-section">
 
+        <div class="exhibition-status">
+            Past
+        </div>
 
-    </section>
+        <div class="exhibition-item">
+
+            <div>
+                <h3>Estuary Art and Ecology Awards Finalist</h3>
+                <p>Uxbridge Arts and Culture Hub</p>
+            </div>
+
+            <div class="exhibition-date">
+                July 5th - August 30th 2025
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
